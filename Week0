@@ -8,7 +8,9 @@ mkdir Yusuf_Kabirat_Opeyemi
       #question 3 
 mkdir biocomputing && cd biocomputing
       #question 4   downloading multiple files
-wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna && https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk && https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna 
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk 
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
        #question 5    moving a file to another directory
 ls -lh biocomputing
 mv wildtype.fna Yusuf_Kabirat_Opeyemi/
