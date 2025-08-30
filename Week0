@@ -15,8 +15,6 @@ wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
 ls -lh biocomputing
 mv wildtype.fna Yusuf_Kabirat_Opeyemi/
        #question 6   deleting a duplicate file
-which rmlint   #checking if rmlint is installed
-rmlint
 rm wildtype.gbk.1
        #question 7    confirming if its a mutant or a wild type
 grep 'tatatata' ../Yusuf_Kabirat_Opeyemi/wildtype.fna
