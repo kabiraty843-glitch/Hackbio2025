@@ -1,1 +1,74 @@
+#!/bin/bash
+    #Stage 0 project
+    #part 1
+    #question 1
+echo "Yusuf Kabirat Opeyemi"
+      #question 2    making a new directory
+mkdir Yusuf_Kabirat_Opeyemi
+      #question 3 
+mkdir biocomputing && cd biocomputing
+      #question 4   downloading multiple files
+wget https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.fna && https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk && https://raw.githubusercontent.com/josoga2/dataset-repos/main/wildtype.gbk
+       #question 5    moving a file to another directory
+ls -lh biocomputing
+mv wildtype.fna Yusuf_Kabirat_Opeyemi/
+       #question 6   deleting a duplicate file
+which rmlint   #checking if rmlint is installed
+rmlint
+rm wildtype.gbk.1
+       #question 7    confirming if its a mutant or a wild type
+grep 'tatatata' ../Yusuf_Kabirat_Opeyemi/wildtype.fna
+       #question 8   printing matching lines into a new file
+grep 'tatatata' wildtype.fna > mutantfile.txt
+       #question 9  counting the number of lines excluding header in the gbk file
+sed '1d' wildtype.gbk | wc -l
+       #question 10  printing the sequence length of the gbk file
+grep 'LOCUS' wildtype.gbk
+       #question 11   printing the source organism of the gbk file
+grep 'SOURCE' wildtype.gbk
+       #question 12   listing the gene names of the gbk file
+grep '/gene' wildtype.gbk
+      #question 13   clearing terminal and printing the history of commands executed
+clear && history
+#question 14
+ls -lh #checking the directory contents for biocomputing
+ls -lh Yusuf_Kabirat_Opeyemi #checking the directory contents for Yusuf_Kabirat_Opeyemi
+
+#section 2
+#question 1
+conda activate base
+ #question 2
+conda create -n funtools
+ #question 3
+conda activate funtools
+ #question 4
+ #installation via conda
+conda config --set channel_priority strict
+conda install figlet -y
+ #question 5
+figlet "Yusuf Kabirat Opeyemi"
+ #question 6
+conda install -c bioconda bwa -y
+ #question 7
+conda install -c bioconda blast
+ #question 8
+conda install samtools -y
+ #question 9
+conda install bedtools -y
+ #question 10
+conda install spades.py -y
+ #question 11
+conda install bcftools -y
+ #question 12
+conda install fastp -y
+ #question 13
+conda install multiqc -y
+#verification of installations
+blastn -version
+samtools --version
+bedtools --version
+spades.py --version
+bcftools --version
+fastp --version
+multiqc --version
 
