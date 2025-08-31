@@ -44,31 +44,30 @@ conda activate funtools
  #question 4
  #installation via conda
 conda config --set channel_priority strict
-conda install figlet -y
+sudo apt-get install figlet
  #question 5
 figlet "Yusuf Kabirat Opeyemi"
  #question 6
 conda install -c bioconda bwa -y
  #question 7
 conda install -c bioconda blast
+blastn --version   #verification of installation
  #question 8
 conda install samtools -y
+samtools --version    #verification of installation
  #question 9
 conda install bedtools -y
+bedtools --version      #verification of installation
  #question 10
-conda install spades.py -y
+conda install spades.py -y     
+spades.py --version      #verification of installation  
  #question 11
 conda install bcftools -y
+bcftools --version        #verification of installation
  #question 12
 conda install fastp -y
+fastp --version     #verification of installation
  #question 13
 conda install multiqc -y
-#verification of installations
-blastn -version
-samtools --version
-bedtools --version
-spades.py --version
-bcftools --version
-fastp --version
-multiqc --version
+multiqc --version      #verification of installation
 
